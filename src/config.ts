@@ -1,3 +1,3 @@
 export default {
-  PORT: 7088,
+  PORT: process.env.PORT || 7088,
 };
