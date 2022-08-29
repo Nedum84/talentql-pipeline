@@ -7,7 +7,7 @@
     "node": "16.x"
   },
   "scripts": {
-    "start": "tsc --build tsconfig.json && node dist/index",
+    "start": "npm install && tsc --build tsconfig.json && node dist/index",
     "web": "npm install && tsc --build tsconfig.json && node dist/index",
     "start:dev": "ts-node-dev src/index"
   },
