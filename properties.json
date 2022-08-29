@@ -3,6 +3,6 @@
   "track": "backend",
   "email": "nelsonnedum@gmail.com",
   "githubUsername": "Nedum84",
-  "deployedAppURL": "",
-  "explainer": ""
+  "deployedAppURL": "https://thenelson-app.herokuapp.com",
+  "explainer": "Nodejs App that calculates age from timestamp"
 }
