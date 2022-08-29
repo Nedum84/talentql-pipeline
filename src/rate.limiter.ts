@@ -11,6 +11,7 @@ export function apiRateLimiter(timeInMinutes: number, maxApiCalls: number, messa
       message:
         message ??
         `You have exceeded max request of ${maxApiCalls} within ${timeInMinutes} minute(s)`,
+      statusCode: 429,
     });
 
     next();
