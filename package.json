@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "scripts": {
-    "start": "node src/index",
-    "web": "node src/index",
+    "start": "tsc --build tsconfig.json && node dist/index",
+    "web": "tsc --build tsconfig.json && node dist/index",
     "start:dev": "ts-node-dev src/index"
   },
   "repository": {
