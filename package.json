@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "tsc --build tsconfig.json && node dist/index",
-    "web": "tsc --build tsconfig.json && node dist/index",
+    "web": "npm install && tsc --build tsconfig.json && node dist/index",
     "start:dev": "ts-node-dev src/index"
   },
   "repository": {
