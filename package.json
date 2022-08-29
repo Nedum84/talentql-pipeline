@@ -3,8 +3,12 @@
   "description": "Build and deploy a very simple API that does the following",
   "version": "1.0.0",
   "main": "src/index.ts",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node src/index",
+    "web": "node src/index",
     "start:dev": "ts-node-dev src/index"
   },
   "repository": {
