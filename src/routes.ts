@@ -19,7 +19,7 @@ router.get("/howold", apiLimiter3ReqFor1Sec, (req, res) => {
   if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
     age--;
   }
-  return res.status(200).json({ age });
+  return res.status(200).json({ age: age > 0 ? age : 0 });
 });
 
 export { router };
