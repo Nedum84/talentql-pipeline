@@ -7,6 +7,7 @@ const app = express();
 app.use(json());
 // parse json request body!
 app.use(express.json({ limit: "50mb" }));
+app.set("trust proxy", 1);
 
 //Routing to the api
 app.use("/", router);
